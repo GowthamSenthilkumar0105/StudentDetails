@@ -22,8 +22,8 @@ public class Student_Controller {
 	@Autowired
 	Student_Service stdser;
 	@PostMapping(value="/addstds")
-	public String addStd(@RequestBody List<Student> s) {
-		return stdser.addStd(s);
+	public String addStudent(@RequestBody List<Student> s) {
+		return stdser.addStudent(s);
 	}
 	@GetMapping(value="/getstds")
 	public List<Student> getStd(){

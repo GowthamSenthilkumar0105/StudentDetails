@@ -13,7 +13,7 @@ public class Student_Dao {
 	@Autowired
 	Student_Repository stdrepo;
 	
-	public String addStd(List<Student> s) {
+	public String addStudent(List<Student> s) {
 		stdrepo.saveAll(s);
 		return "Added successfully";
 	}

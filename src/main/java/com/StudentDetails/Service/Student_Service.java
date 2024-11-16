@@ -14,8 +14,8 @@ public class Student_Service {
 	@Autowired
 	Student_Dao stddao;
 	
-	public String addStd(List<Student> s) {
-		return stddao.addStd(s);
+	public String addStudent(List<Student> s) {
+		return stddao.addStudent(s);
 	}
 	
 	public List<Student> getStd(){
