@@ -41,5 +41,9 @@ public class Student_Controller {
 	public String ageRestrict(@RequestBody Student s) throws AgeException{
 		return stdser.ageRestrict(s);
 	}
+	@GetMapping(value="/jira")
+	public String jira(String jira) {
+		return "jira";
+	}
 
 }
